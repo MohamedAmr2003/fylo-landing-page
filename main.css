@@ -1,0 +1,161 @@
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturate-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --p-s:16px;
+    --h-call: 'Rubik', sans-serif;
+}
+
+body{
+    font-family: 'Rubik', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--Desaturate-Blue);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+header .logo img{
+    height: 40px;
+}
+
+
+header .logo .love{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transform: translateX(450px);
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin-right: 30px;
+    text-transform: capitalize;
+}
+
+
+.body .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.body .content .text h2{
+text-transform: capitalize;
+color: var(--Very-Dark-Blue);
+
+}
+
+.body .content .text p{
+color: var(--Desaturate-Blue);
+}
+
+.body .content .text form{
+    margin-top: 30px;
+}
+
+.body .content .text form input[type="email"]{
+    border: var(--Desaturate-Blue) 1px solid;
+    margin-right: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+ form input[type="submit"] {
+    background-color: var(--Bright-Blue);
+    color: white;
+   height: 30px;
+   width: 100px;
+    border: none;
+    text-align: center;
+    transition: 0.5s;
+}
+
+form input[type="submit"]:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.body .content .images img{
+height: 50vh;
+}
+
+
+
+ section{
+   background-image: url(images/bg-curve-desktop.svg);
+   background-size: cover;
+   height: 200vh;
+   margin-top: -600px;
+}
+
+section .content{
+    transform: translateY(1000px);
+}
+
+section .content .text a{
+    color: var(--Moderate-Cyan);
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+section .content .text a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--Moderate-Cyan);
+    bottom: 24px;
+    left: 0px;
+}
+
+
+.bottom{
+    background-color: var(--Desaturate-Blue);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bottom .content .text h2,
+.bottom .content .text p{
+    color: white;
+}
+
+
+
+.bottom .content .text p{
+    text-transform: lowercase;
+    font-size:var(--p-s)
+}
+
+.bottom form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom form input{
+    margin-top: 10px;
+}
